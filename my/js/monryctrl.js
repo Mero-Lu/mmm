@@ -5,7 +5,7 @@ $(function(){
     var pagesize = null; //每页大小
     var page=null;   //获取页数
     $('#sel').val(pageid);
-    render();
+    render(pageid);
 
     function render(pageid){
         $.ajax({
@@ -28,7 +28,6 @@ $(function(){
                 }
                 $('#sel').html(htmlStr);
                  $('#sel').val(pageid);
-
             }
         })
     }
