@@ -1,0 +1,54 @@
+
+@import 'common';
+
+.mm_main {
+    width: 100%;
+    // height: 1000px;
+    // background-color: pink;
+
+    .main_uu {
+       margin-bottom: 40/@base;
+        li {
+
+            a {
+                display: block;
+                height: 78/@base;
+                width: 100%;
+                // border-top: 1/@base solid #ccc;
+                line-height: 78/@base;
+                background-color: #ededed;
+                padding-left: 20/@base;
+                padding-right: 20/@base;
+                span {
+                    font-size: 34/@base;
+                    // font-weight: 700;
+                    color: #000;
+                    // float: left;
+                }
+                i {
+                    line-height: 78/@base;
+                }
+            }
+
+
+            .uu_ul {
+                display:none;
+                overflow: hidden;
+                li {
+                    float: left;
+                    width: 33.3%;
+                    a {
+                        display: block;
+                        background-color: #fff;
+                        text-align: center;
+                        border-right: 1/@base solid #ccc;
+                        border-bottom: 1/@base solid #ccc;
+                    }
+                    a:nth-child(3n){
+                        border-right: none;
+                    }
+                }
+            }
+        }
+    }
+}

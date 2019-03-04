@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./fonts/fa/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/list.css">
+    <title>商品大全</title>
+    <script src="./lib/flexible/flexible.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- 头部 -->
+        <div class="mm_head">
+            <div class="head_left">
+                <img src="./images/header_logo.png" alt="">
+            </div>
+            <div class="head_right">
+                <a href="#"><img src="./images/header_app.png" alt=""></a>
+            </div>
+        </div>
+
+        <!-- 搜索 -->
+        <div class="mm_search">
+            <input type="text" placeholder="请输入你想比价的商品">
+            <button>搜索</button>
+        </div>
+        <div class="z1">
+            <a href="index.html">首页 ></a>
+            <a href="brandTitle.html"> 全部分类 ></a>
+        </div>
+        <div class="hot">
+            <div class="z3">
+                <h4></h4>
+            </div>
+        </div>
+
+        <div class="mm_main">
+            <div class="mm_top">
+                <ul class="mm_box">
+                    <!-- 挖个坑 -->
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+            <div class="hot2">
+                <div class="z3">
+                    <h4></h4>
+                </div>
+            </div>
+
+            <div class="mm_bottom">
+                <ul class="com">
+                    <!-- 挖个坑 -->
+                </ul>
+            </div>
+            <div class="hot3">
+                <div class="z3">
+                    <h4></h4>
+                </div>
+            </div>
+
+            <!-- 评论 -->
+            <div class="mm_product">
+                <!-- 挖个坑 -->
+            </div>
+
+        </div>
+
+        <!-- 底部 -->
+        <div class="mm_footer">
+            <div class="foot_top clearfix">
+                <a href="#">登录</a>
+                <a href="#">注册</a>
+                <a href="#"><img src="./images/top.jpg" alt="">返回顶部</a>
+            </div>
+            <div class="foot_bottom">
+                <p class="w3">
+                    <a href="#">手机APP下载</a>
+                    <a href="#">慢慢买手机版</a>
+                    <a href="#">--掌上比价平台</a>
+                </p>
+                <p class="w4">m.manmanbuy.com</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- mm_top  模板 -->
+    <script type="text/html" id="categoryTpl">
+            {{ each result v i }}
+                <li class="w1" data-id="{{v.brandTitleId}}" class="clearfix">
+                    <div class="ss">{{i + 1}}</div>
+                    <a href="commodity.html?categoryId={{v.categoryId}}" class="a">
+                        <p class="txt">{{v.brandName}}</p>
+                        <i class="fa fa-chevron-right fr"></i>
+                        <p class="bb">{{v.brandInfo}}</p>
+                    </a>
+                </li>
+            {{/each}}
+    </script>
+
+    <!-- 产品模板 -->
+    <script type="text/html" id="lis">
+        {{each result v i}}
+            <li>
+                <a href="#mao" data-img="{{v.productImg}}" data-tet="{{v.productName}}" data-idd="{{v.productId}}">
+                    <div class="img">
+                        {{@v.productImg}}
+                    </div>
+                    <div class="info_right">
+                        <p class="w1">{{v.productName}}</p>
+                        <p class="w2">{{v.productPrice}}</p>
+                        <p class="w3">{{v.productQuote}} <span>{{v.productCom}}</span></p>
+                    </div>
+                </a>
+            </li>
+        {{/each}}
+    </script>
+
+    <!-- 评论模板 -->
+    <script type="text/html" id="lunTpl">
+        {{each result v i }}
+            <div class="product_title">
+                <ul>
+                    <li>
+                        <a href="#" data-id="20">
+                            <div class="img">
+                                <img src="./images/categorylist.jpg" alt="">
+                            </div>
+                            <div class="info_right" id="mao">
+                                <p class="w1">2222</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="product_tet">
+                <p class="lf clearfix"><span class="nam">{{v.comName}}</span><span class="dat">{{v.comTime}}</span></p>
+                <p class="botto">{{v.comContent}}</p>
+            </div>
+        {{ /each }}
+    </script>
+
+    <!-- 图片模板 -->
+    <!-- <script type="text/html" id="picTpl">
+        {{each result v i }}
+            {{if i == 0}}
+                <li>
+                    <a href="#" data-id="20">
+                        <div class="img">
+                            {{@v.productImg}}
+                        </div>
+                        <div class="info_right">
+                            <p class="w1">{{v.productName}}</p>
+                        </div>
+                    </a>
+                </li>
+                {{/if}}
+        {{/each}}
+    </script> -->
+
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/list.js"></script>
+</body>
+
+</html>

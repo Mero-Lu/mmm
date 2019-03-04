@@ -1,0 +1,102 @@
+@import 'common';
+
+
+.container{
+    position: relative;
+    .head_left {
+       height: 100%;
+        a {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 20/@base;
+        }
+    }
+    h3 {
+        color: #fff;
+        font-size: 42/@base;
+        text-align: center;
+        line-height: 96/@base;
+        position: absolute;
+        top: 5/@base;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+   
+}
+
+.mm_info {
+    // height: 2000px;
+    // background-color: pink;
+
+    .info_bottom {
+
+        li {
+            height: 256/@base;
+            width: 100%;
+            background-color: #fff;
+            a {
+                display: block;
+                height: 100%;
+                width: 100%;
+                padding: 25/@base 0;
+                border-bottom: 1px solid #ccc;
+
+                .img {
+                    width: 221/@base;
+                    float: left;
+                }
+                .info_right {
+                    // float: right;
+                    h4 {
+                        font-size: 30/@base;
+                        color: #000;
+                    }
+                    .w2 {
+                        color: #ffab3e;
+                        font-size: 26/@base;
+                    }
+                    .w3 {
+                        margin-top: 60/@base;
+                        font-size: 26/@base;
+                        position: relative;
+
+                        span {
+                            float: right;
+                            img {
+                                position: absolute;
+                                top: 3/@base;
+                                right: 35/@base;
+                                width: 20/@base;
+                                height: 20/@base;
+                            }
+                            font-size: 20/@base;
+                            margin-right: 15/@base;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.mm_foot {
+    margin-top: 20/@base;
+    padding: 0 40/@base;
+    margin-bottom: 40/@base;
+    button {
+        width: 162/@base;
+        height: 63/@base;
+        font-size: 25/@base;
+    }
+    #sel {
+        font-size: 25/@base;
+        margin-left: 100/@base;
+        padding-left: 30/@base;
+        height: 63/@base;
+        text-align: center;
+        width: 130/@base;
+    }
+    .w2 {
+        float: right;
+    }
+}

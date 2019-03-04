@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./fonts/fa/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/commodity.css">
+    <title>比价搜索页面</title>
+    <script src="./lib/flexible/flexible.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- 头部 -->
+        <div class="mm_head">
+            <div class="head_left">
+                <img src="./images/header_logo.png" alt="">
+            </div>
+            <div class="head_right">
+                <a href="#"><img src="./images/header_app.png" alt=""></a>
+            </div>
+        </div>
+
+        <!-- 搜索 -->
+        <div class="mm_search">
+            <input type="text" placeholder="请输入你想比价的商品">
+            <button>搜索</button>
+        </div>
+
+
+        <div class="mm_main">
+            <div class="mm_top clearfix">
+                <div class="w1_left fl">
+                        <!-- 挖个坑 -->
+                </div>
+                <div class="w1_right fr">
+                    <button>筛选</button>
+                </div>
+            </div>
+            <div class="mm_bottom">
+                <ul id="ul">
+                    <!-- 挖个坑 -->
+                </ul>
+            </div>
+
+            <div class="mm_foot">
+                <button class="w1">上一页</button>
+                <select name="page" id="sel" value="1">
+                    <!-- <option value="1">1/3</option>
+                    <option value="2">2/3</option>
+                    <option value="3">3/3</option> -->
+                </select>
+                <button class="w2">下一页</button>
+            </div>
+        </div>
+
+        <!-- 底部 -->
+        <div class="mm_footer">
+            <div class="foot_top clearfix">
+                <a href="#">登录</a>
+                <a href="#">注册</a>
+                <a href="#"><img src="./images/top.jpg" alt="">返回顶部</a>
+            </div>
+            <div class="foot_bottom">
+                <p class="w3">
+                    <a href="#">手机APP下载</a>
+                    <a href="#">慢慢买手机版</a>
+                    <a href="#">--掌上比价平台</a>
+                </p>
+                <p class="w4">m.manmanbuy.com</p>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/html" id="commTpl">
+        {{each result v i }}
+            <a href="index.html">首页 ></a>
+            <a href="category.html">全部分类 ></a>
+            <a href="#">{{v.category}} ></a>
+        {{/each}}
+    </script>
+
+    <script type="text/html" id="ulTpl">
+        {{ each result v i }}
+            <li>
+                <a href="detail.html?productid={{v.productId}}" data-id="{{v.productId}}">
+                    <div class="img">
+                        {{@v.productImg}}
+                    </div>
+                    <div class="info_right">
+                        <h4 class="txt-cut">{{ v.productName}}</h4>
+                        <p class="w2">{{v.productPrice}}</p>
+                        <p class="w3">{{v.productQuote}} <span>{{v.productCom}}</span></p>
+                    </div>
+                </a>
+            </li>
+        {{ /each }}
+    </script>
+   
+
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/commodity.js"></script>
+</body>
+
+</html>

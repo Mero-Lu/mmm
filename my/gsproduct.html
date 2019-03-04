@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="./css/common.css"> -->
+    <link rel="stylesheet" href="./lib/fa/css/font-awesome.css">
+    <link rel="stylesheet" href="./css/gsproduct.css">
+    <title>凑单品页面</title>
+    <script src="./lib/flexible/flexible.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- 头部 -->
+        <div class="mm_head">
+            <div class="head_left">
+                <a href="javascript:history.go(-1);"><i class="fa fa-arrow-left"></i></a>
+                <h3>凑单品</h3>
+            </div>
+            <div class="head_right">
+                <a href="#"><img src="./images/header_app.png" alt=""></a>
+            </div>
+        </div>
+
+        <div class="mm_main">
+            <div class="mm_info">
+                <div class="head clearfix">
+                    <div class="wrapp">
+                        <!-- 挖个坑 -->
+                        <a href="#" data-id="{{v.shopId}}"><span>一号店</span><i class="fa fa-chevron-down"></i>  </a>
+                        <a href="#" data-id="{{v.shopId}}"><span>华南</span><i class="fa fa-chevron-down"></i>  </a>
+                        <a href="#" data-id="{{v.shopId}}"><span>全部价格</span><i class="fa fa-chevron-down"></i>  </a>
+                    </div>
+                    <a href="#" class="bot"><i class="fa fa-search i"></i></a>
+                </div>
+                <div class="ww">
+                    <ul class="content" style="display: none">
+                        <!-- 挖个可 -->
+                    </ul>
+                    <ul class="two" style="display: none">
+                        <!-- 挖个坑 -->
+                    </ul>
+                </div>
+            
+            </div>
+
+            <div class="bottom">
+                <ul class="clearfix">
+
+                </ul>
+            </div>
+          
+            
+        </div>
+
+        <!-- 底部 -->
+        <div class="mm_footer">
+            <div class="foot_top clearfix">
+                <a href="#">登录</a>
+                <a href="#">注册</a>
+                <a href="#"><img src="./images/top.jpg" alt="">返回顶部</a>
+            </div>
+            <div class="foot_bottom">
+                <p class="w3">
+                    <a href="#">手机APP下载</a>
+                    <a href="#">慢慢买手机版</a>
+                    <a href="#">--掌上比价平台</a>
+                </p>
+                <p class="w4">m.manmanbuy.com</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 内容的模板 -->
+    <script type="text/html" id="contentTpl">
+        {{each result v i }}
+            <li>
+                <a href="#">
+                    <div class="img">
+                        <img src="{{@v.productImg}}" alt="">
+                    </div>
+                    <div class="right">
+                        <p class="one-txt-cut">{{v.productName}}</p>
+                        <div class="ww2">
+                            <span class="fl zz">{{v.productPrice}}</span>
+                            <span class="first cc">去凑单</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        {{/each}}
+    </script>
+
+    <!-- 头部的模板 -->
+    <script type="text/html" id="headTpl">
+        {{each result v i }}
+            <li><a href="#" data-id="{{v.shopId}}" class="{{ i == 0 ? 'on' : ''}}"><span class="first">{{v.shopName}}</span><span class="fr">√</span></a></li>
+        {{/each}}
+    </script>
+    <!-- 区域下拉单 -->
+    <script type="text/html" id="quTpl">
+        {{each result v i }}
+            <li><a href="#" data-id="{{v.areaId}}" class="{{ i == 0 ? 'on' : '' }}"><span class="first">{{v.areaName}}</span><span class="fr">√</span></a></li>
+        {{/each}}
+    </script>
+
+
+    
+
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <script src="./lib/IScroll/iscroll.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/gsproduct.js"></script>
+</body>
+
+</html>
