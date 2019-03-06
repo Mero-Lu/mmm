@@ -420,175 +420,130 @@ button {
   text-align: center;
   font-size: 0.26666667rem;
 }
-.container {
+a:hover {
+  cursor: pointer;
+}
+.mm_mean {
   background-color: #fff;
-  position: relative;
-}
-.container .mm_head .head_left {
-  height: 100%;
-}
-.container .mm_head .head_left a {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 0.26666667rem;
-}
-.container .mm_head h3 {
-  color: #fff;
-  font-size: 0.56rem;
-  text-align: center;
-  line-height: 1.28rem;
-  position: absolute;
-  top: 0.06666667rem;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.container .mm_main {
-  background-color: #ccc;
-}
-.container .mm_main .mm_info {
-  overflow: hidden;
-}
-.container .mm_main .mm_info .uu {
-  height: 1.06666667rem;
-  background-color: #fff;
-  box-sizing: border-box;
-  margin-bottom: 0.26666667rem;
-}
-.container .mm_main .mm_info .uu li {
-  float: left;
-  padding: 0.06666667rem 0.26666667rem;
-  padding-bottom: 0.04rem;
-}
-.container .mm_main .mm_info .uu li a {
-  padding: 0 0.09333333rem;
-  color: #000;
-  display: block;
-  font-size: 0.32rem;
-  text-align: center;
-  line-height: 1.02666667rem;
-  border-bottom: 0.04rem solid transparent;
-}
-.container .mm_main .mm_info .uu li.current a {
-  color: red;
-  border-color: red;
-}
-.container .mm_main .mm_info .content {
-  width: 100%;
-  margin-bottom: 0.26666667rem;
-}
-.container .mm_main .mm_info .content li {
-  height: 4rem;
-  width: 100%;
+  margin-top: 0.2rem;
   margin-bottom: 0.13333333rem;
-  background-color: #fff;
-  box-sizing: border-box;
 }
-.container .mm_main .mm_info .content li .img {
-  height: 100%;
-  padding-top: 0.26666667rem;
-  padding-left: 0.2rem;
-  width: 3.66666667rem;
+.mm_mean li {
+  width: 25%;
   float: left;
+  margin-bottom: 0.13333333rem;
+  text-align: center;
+  margin-top: 0.33333333rem;
 }
-.container .mm_main .mm_info .content li .img img {
+.mm_mean li img {
+  width: 1.41333333rem;
+  height: 1.41333333rem;
   margin: 0 auto;
 }
-.container .mm_main .mm_info .content li .right {
-  width: 6.13333333rem;
-  padding-top: 0.2rem;
-  padding-left: 0.13333333rem;
-  padding-right: 0.13333333rem;
-  overflow: hidden;
-  float: left;
-  height: 100%;
+.mm_mean li p {
+  color: #000;
+  font-size: 0.26666667rem;
+  height: 0.53333333rem;
+  line-height: 0.53333333rem;
 }
-.container .mm_main .mm_info .content li .right .w11 {
-  font-size: 0.32rem;
+.mm_mean li:nth-last-child(-n + 4) {
+  display: none;
+}
+.mm_info {
+  width: 100%;
+}
+.mm_info .info_top {
+  height: 0.88rem;
+  background-image: linear-gradient(to right, #ffaf47, #ff9000);
+  padding-left: 0.24rem;
+  padding-right: 0.26666667rem;
+}
+.mm_info .info_top h3 {
+  color: #fff;
+  font-size: 0.4rem;
+  line-height: 0.88rem;
+  float: left;
+}
+.mm_info .info_top .right img {
+  margin-top: 0.2rem;
+  width: 0.53333333rem;
+  height: 0.53333333rem;
+}
+.mm_info .info_bottom li {
+  height: 3.41333333rem;
+  width: 100%;
+  background-color: #fff;
+}
+.mm_info .info_bottom li a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding: 0.33333333rem 0;
+  border-bottom: 1px solid #ccc;
+}
+.mm_info .info_bottom li a .img {
+  width: 2.94666667rem;
+  float: left;
+}
+.mm_info .info_bottom li a .info_right h4 {
+  font-size: 0.4rem;
   color: #000;
 }
-.container .mm_main .mm_info .content li .right .w11 .b {
-  font-weight: 700;
-  overflow: hidden;
+.mm_info .info_bottom li a .info_right .w2 {
+  color: #ffab3e;
+  font-size: 0.34666667rem;
 }
-.container .mm_main .mm_info .content li .right p {
-  margin-bottom: 0.26666667rem;
-  margin-top: 0.32rem;
-  font-size: 0.42666667rem;
-  color: red;
-}
-.container .mm_main .mm_info .content li .right p i {
-  font-size: 0.29333333rem;
-}
-.container .mm_main .mm_info .content li .right p em {
-  font-size: 0.29333333rem;
-  margin: 0 0.06666667rem;
-}
-.container .mm_main .mm_info .content li .right p del {
-  color: #ccc;
-  font-size: 0.26666667rem;
-  margin-left: 0.2rem;
-}
-.container .mm_main .mm_info .content li .right .w22 .bar {
-  padding-top: 0.06666667rem;
-}
-.container .mm_main .mm_info .content li .right .w22 .bar i {
-  display: inline-block;
-  width: 2.16rem;
-  height: 0.32rem;
-  border: 1px solid red;
-  border-radius: 0.26666667rem;
-  overflow: hidden;
+.mm_info .info_bottom li a .info_right .w3 {
+  margin-top: 0.8rem;
+  font-size: 0.34666667rem;
   position: relative;
 }
-.container .mm_main .mm_info .content li .right .w22 .bar i em {
-  background-color: red;
-  display: block;
-  height: 100%;
-  border-radius: 0.2rem;
+.mm_info .info_bottom li a .info_right .w3 span {
+  float: right;
+  font-size: 0.26666667rem;
+  margin-right: 0.2rem;
 }
-.container .mm_main .mm_info .content li .right .w22 .bar i span {
+.mm_info .info_bottom li a .info_right .w3 span img {
   position: absolute;
-  top: 0.13333333rem;
-  font-size: 0.26666667rem;
-  left: 50%;
-  transform: translateY(-50%);
+  top: 0.04rem;
+  right: 0.46666667rem;
+  width: 0.26666667rem;
+  height: 0.26666667rem;
 }
-.container .mm_main .mm_info .content li .right .w22 .bar b {
-  font-size: 0.26666667rem;
-  font-weight: 400;
-  margin-left: 0.13333333rem;
-  position: relative;
-  top: -0.06666667rem;
-}
-.container .mm_main .mm_info .content li .right .w33 {
+.mm_more {
+  width: 100%;
   margin-top: 0.2rem;
-  overflow: hidden;
-  font-size: 0.26666667rem;
+  margin-bottom: 0.66666667rem;
 }
-.container .mm_main .mm_info .content li .right .w33 .w44 {
+.mm_more .more_top {
+  padding: 0 0.26666667rem;
+  margin-bottom: 0.26666667rem;
+}
+.mm_more .more_top button {
+  height: 0.84rem;
+  border-radius: 0.13333333rem;
+  font-family: '宋体';
+  font-size: 0.37333333rem;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #eee;
+  -webkit-tap-highlight-color: transparent;
+}
+.mm_more .more_bottom {
+  width: 100%;
+  height: 0.92rem;
+  background-image: linear-gradient(to right, #ffaf47, #ff9000);
+  padding-left: 0.24rem;
+  padding-right: 0.26666667rem;
+}
+.mm_more .more_bottom h3 {
+  color: #fff;
+  font-size: 0.4rem;
+  line-height: 0.88rem;
   float: left;
 }
-.container .mm_main .mm_info .content li .right .w33 .w44 a {
-  display: block;
-  color: red;
-  height: 0.66666667rem;
-  border: 0.01333333rem dotted #ff0000;
-  line-height: 0.66666667rem;
-  text-align: center;
-  padding: 0 0.06666667rem;
-}
-.container .mm_main .mm_info .content li .right .w33 .w55 {
-  float: right;
-}
-.container .mm_main .mm_info .content li .right .w33 .w55 a {
-  text-align: center;
-  line-height: 0.74666667rem;
-  display: block;
-  background-color: red;
-  border-radius: 0.13333333rem;
-  height: 0.74666667rem;
-  font-size: 0.26666667rem;
-  color: #fff;
-  width: 1.49333333rem;
+.mm_more .more_bottom .right img {
+  margin-top: 0.2rem;
+  width: 0.53333333rem;
+  height: 0.53333333rem;
 }

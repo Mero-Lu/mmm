@@ -420,6 +420,9 @@ button {
   text-align: center;
   font-size: 0.26666667rem;
 }
+a:hover {
+  cursor: pointer;
+}
 .container {
   background-color: #fff;
   position: relative;
@@ -443,52 +446,41 @@ button {
   left: 50%;
   transform: translateX(-50%);
 }
-.container .mm_main {
-  background-color: #fff;
+.container .mm_main .title {
+  margin-top: 0.2rem;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  width: 100%;
+  background-color: #ccc;
+  padding-left: 0.26666667rem;
 }
-.container .mm_main .mm_info ul {
-  margin-bottom: 0.53333333rem;
+.container .mm_main .title a {
+  color: #000;
 }
-.container .mm_main .mm_info ul li {
-  float: left;
-  width: 50%;
-  height: 7.04rem;
-  border: 0.01333333rem solid #cccccc;
-}
-.container .mm_main .mm_info ul li a {
-  display: block;
+.container .mm_main .content {
   width: 100%;
   height: 100%;
+  padding: 0.4rem 0.13333333rem;
+  margin-bottom: 0.26666667rem;
 }
-.container .mm_main .mm_info ul li a .img {
-  width: 100%;
-  height: 4.13333333rem;
-  padding-top: 0.53333333rem;
+.container .mm_main .content li {
+  float: left;
+  width: 3.06666667rem;
+  height: 1.93333333rem;
+  border: 0.01333333rem solid #cccccc;
+  margin-bottom: 0.13333333rem;
+  text-align: center;
+  padding-top: 0.10666667rem;
 }
-.container .mm_main .mm_info ul li a .img img {
-  width: 80%;
-  height: 80%;
+.container .mm_main .content li .img img {
+  width: 1.41333333rem;
+  height: 1.41333333rem;
   margin: 0 auto;
 }
-.container .mm_main .mm_info ul li a .text {
-  padding: 0 0.48rem;
-}
-.container .mm_main .mm_info ul li a .text h3 {
-  font-size: 0.32rem;
-  color: #000;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-}
-.container .mm_main .mm_info ul li a .text p {
-  color: orange;
-  font-size: 0.29333333rem;
-  margin-top: 0.29333333rem;
-}
-.container .mm_main .mm_info ul li a .text .w2 {
-  color: #ccc;
+.container .mm_main .content li p {
   font-size: 0.26666667rem;
-  margin-top: 0.26666667rem;
+  color: #000;
+}
+.container .mm_main .content li:nth-child(2) {
+  margin: 0 0.13333333rem;
 }

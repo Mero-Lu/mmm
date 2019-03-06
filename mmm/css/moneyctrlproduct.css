@@ -420,19 +420,23 @@ button {
   text-align: center;
   font-size: 0.26666667rem;
 }
+a:hover {
+  cursor: pointer;
+}
 .container {
+  background-color: #fff;
   position: relative;
 }
-.container .head_left {
+.container .mm_head .head_left {
   height: 100%;
 }
-.container .head_left a {
+.container .mm_head .head_left a {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   left: 0.26666667rem;
 }
-.container h3 {
+.container .mm_head h3 {
   color: #fff;
   font-size: 0.56rem;
   text-align: center;
@@ -442,65 +446,125 @@ button {
   left: 50%;
   transform: translateX(-50%);
 }
-.mm_info .info_bottom li {
-  height: 3.41333333rem;
+.container .mm_main .mm_info {
+  padding: 0 0.13333333rem;
+}
+.container .mm_main .mm_info .mm_top {
+  margin-bottom: 0.26666667rem;
   width: 100%;
-  background-color: #fff;
 }
-.mm_info .info_bottom li a {
-  display: block;
-  height: 100%;
+.container .mm_main .mm_info .mm_top h3 {
   width: 100%;
-  padding: 0.33333333rem 0;
-  border-bottom: 1px solid #ccc;
+  font-size: 0.48rem;
+  color: #000;
+  margin-top: 0.4rem;
+  padding-left: 0.26666667rem;
+  margin-bottom: 0.46666667rem;
 }
-.mm_info .info_bottom li a .img {
-  width: 2.94666667rem;
-  float: left;
+.container .mm_main .mm_info .mm_top p {
+  padding-left: 0.26666667rem;
+  font-size: 0.29333333rem;
+  color: #ccc;
 }
-.mm_info .info_bottom li a .info_right h4 {
-  font-size: 0.4rem;
+.container .mm_main .mm_bottom img {
+  width: 30%;
+  float: right;
+}
+.container .mm_main .uu {
+  width: 100%;
+  margin-top: 0.26666667rem;
+}
+.container .mm_main .uu ul {
+  margin: 0 auto;
+  width: 3.6rem;
+  border: 0.01333333rem solid #cccccc;
+  padding: 0 0.24rem;
+}
+.container .mm_main .uu ul li {
+  height: 0.48rem;
+  border-bottom: 0.01333333rem dashed #cccccc;
+  padding: 0 0.22666667rem;
+}
+.container .mm_main .uu ul li a {
+  font-size: 0.32rem;
   color: #000;
 }
-.mm_info .info_bottom li a .info_right .w2 {
-  color: #ffab3e;
-  font-size: 0.34666667rem;
-}
-.mm_info .info_bottom li a .info_right .w3 {
-  margin-top: 0.8rem;
-  font-size: 0.34666667rem;
-  position: relative;
-}
-.mm_info .info_bottom li a .info_right .w3 span {
+.container .mm_main .uu ul li a strong {
+  color: orange;
   float: right;
-  font-size: 0.26666667rem;
-  margin-right: 0.2rem;
 }
-.mm_info .info_bottom li a .info_right .w3 span img {
-  position: absolute;
-  top: 0.04rem;
-  right: 0.46666667rem;
-  width: 0.26666667rem;
-  height: 0.26666667rem;
-}
-.mm_foot {
-  margin-top: 0.26666667rem;
+.container .mm_main .btn {
+  margin-bottom: 0.73333333rem;
+  margin-top: 0.53333333rem;
+  width: 100%;
   padding: 0 0.53333333rem;
+}
+.container .mm_main .btn button {
+  margin-bottom: 0.53333333rem;
+  height: 0.8rem;
+  width: 100%;
+  background-color: orange;
+  border-radius: 0.13333333rem;
+}
+.container .mm_main .btn img {
+  width: 100%;
+  height: 3.10666667rem;
+}
+.container .mm_main .ww {
+  padding: 0 0.26666667rem;
+}
+.container .mm_main .ww .cu-content-pl .tit {
+  font-size: 0.42666667rem;
+  color: #000;
+  margin-bottom: 0.37333333rem;
+}
+.container .mm_main .ww .cu-content-pl .reply textarea {
+  width: 100%;
+  height: 1.89333333rem;
+  border: 0.01333333rem solid #cccccc;
+}
+.container .mm_main .ww .cu-content-pl .reply .ctrl {
+  overflow: hidden;
+  border: 0.01333333rem solid #cccccc;
+  margin-top: -0.09333333rem;
+  margin-bottom: 0.4rem;
+}
+.container .mm_main .ww .cu-content-pl .reply .ctrl input {
+  height: 1.06666667rem;
+  width: 2.66666667rem;
+  background-color: orange;
+  font-size: 0.4rem;
+  color: #fff;
+  float: right;
+}
+.container .mm_main .ww .cu-content-pl #newcomment {
+  font-size: 0.42666667rem;
   margin-bottom: 0.53333333rem;
 }
-.mm_foot button {
-  width: 2.16rem;
-  height: 0.84rem;
-  font-size: 0.33333333rem;
+.container .mm_main .ww .cu-content-pl .list li {
+  overflow: hidden;
+  margin-bottom: 0.26666667rem;
 }
-.mm_foot #sel {
-  font-size: 0.33333333rem;
-  margin-left: 1.33333333rem;
-  padding-left: 0.4rem;
-  height: 0.84rem;
-  text-align: center;
-  width: 1.73333333rem;
+.container .mm_main .ww .cu-content-pl .list li .userimg {
+  float: left;
 }
-.mm_foot .w2 {
+.container .mm_main .ww .cu-content-pl .list li .userimg img {
+  display: inline-block;
+  width: 1.13333333rem;
+  height: 1.13333333rem;
+  border-radius: 50%;
+}
+.container .mm_main .ww .cu-content-pl .list li .con {
+  margin-left: 1.46666667rem;
+}
+.container .mm_main .ww .cu-content-pl .list li .con .name {
+  height: 0.66666667rem;
+}
+.container .mm_main .ww .cu-content-pl .list li .con .username {
+  float: left;
+  font-size: 0.32rem;
+  color: #9ee4f5;
+}
+.container .mm_main .ww .cu-content-pl .list li .con .time {
   float: right;
 }

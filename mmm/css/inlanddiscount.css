@@ -420,43 +420,78 @@ button {
   text-align: center;
   font-size: 0.26666667rem;
 }
-.mm_main {
-  width: 100%;
+a:hover {
+  cursor: pointer;
 }
-.mm_main .main_uu {
+.container {
+  background-color: #fff;
+  position: relative;
+}
+.container .mm_head .head_left {
+  height: 100%;
+}
+.container .mm_head .head_left a {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0.26666667rem;
+}
+.container .mm_head h3 {
+  color: #fff;
+  font-size: 0.56rem;
+  text-align: center;
+  line-height: 1.28rem;
+  position: absolute;
+  top: 0.06666667rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.container .mm_main {
+  background-color: #fff;
+}
+.container .mm_main .mm_info ul {
   margin-bottom: 0.53333333rem;
 }
-.mm_main .main_uu li a {
-  display: block;
-  height: 1.04rem;
-  width: 100%;
-  line-height: 1.04rem;
-  background-color: #ededed;
-  padding-left: 0.26666667rem;
-  padding-right: 0.26666667rem;
-}
-.mm_main .main_uu li a span {
-  font-size: 0.45333333rem;
-  color: #000;
-}
-.mm_main .main_uu li a i {
-  line-height: 1.04rem;
-}
-.mm_main .main_uu li .uu_ul {
-  display: none;
-  overflow: hidden;
-}
-.mm_main .main_uu li .uu_ul li {
+.container .mm_main .mm_info ul li {
   float: left;
-  width: 33.3%;
+  width: 50%;
+  height: 7.04rem;
+  border: 0.01333333rem solid #cccccc;
 }
-.mm_main .main_uu li .uu_ul li a {
+.container .mm_main .mm_info ul li a {
   display: block;
-  background-color: #fff;
-  text-align: center;
-  border-right: 0.01333333rem solid #cccccc;
-  border-bottom: 0.01333333rem solid #cccccc;
+  width: 100%;
+  height: 100%;
 }
-.mm_main .main_uu li .uu_ul li a:nth-child(3n) {
-  border-right: none;
+.container .mm_main .mm_info ul li a .img {
+  width: 100%;
+  height: 4.13333333rem;
+  padding-top: 0.53333333rem;
+}
+.container .mm_main .mm_info ul li a .img img {
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
+}
+.container .mm_main .mm_info ul li a .text {
+  padding: 0 0.48rem;
+}
+.container .mm_main .mm_info ul li a .text h3 {
+  font-size: 0.32rem;
+  color: #000;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.container .mm_main .mm_info ul li a .text p {
+  color: orange;
+  font-size: 0.29333333rem;
+  margin-top: 0.29333333rem;
+}
+.container .mm_main .mm_info ul li a .text .w2 {
+  color: #ccc;
+  font-size: 0.26666667rem;
+  margin-top: 0.26666667rem;
 }
